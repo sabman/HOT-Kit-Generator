@@ -1,0 +1,74 @@
+# This document will help you navigate the HOT KIT.  The table of contents references the folders and subfolders you will need to set up an OSM project in your community.  Within each of these folders, you can find additional documentation that may be useful training materials and reference guides.  These materials should serve to answer any new staff's first lines of questions.
+
+DATA:
+  # The sub folder  0100_OSM_DATA is meant for offline use in field work (survey/ mapping/ training); it has to be kept up to date.
+  OSM_DATA:
+  # The sub folder 0101_GIS_DATA is meant to support GIS use in cartography (planning), data processing (conversion to OSM data in GIS standard exchange)  
+  GIS_DATA: 
+    BASE_LAYERS:
+      PHYSICAL:
+      ADMINISTRATIVE:
+      SETTLEMENTS:
+      TRANSPORTATION:
+      HYDROLOGY:
+      INFRASTRUCTURE:
+      TERRAIN:
+      INDEX_GRIDS:
+    THEMATIC_LAYERS:
+      IDP:
+      DEMOGRAPHICS:
+      SECURITY:
+      ACCESSIBILITY:
+      SERVICE_INFRASTRUCTURE:
+      EMERGENCY_SERVICES:
+      HEALTH:
+      EDUCATION:
+      LAND_USE:
+      UTILITIES:
+      HAZARDS:
+      GEOPHYSICAL:
+      SOCIAL:
+      WWW:
+      DAMAGED\&DESTROYED:
+      TRANSPORTATION:
+      WAREHOUSING:
+      OTHERS:
+
+# Folders to manage suveying work
+SURVEYS:
+  PLANNED:
+  IN_COMING:
+  PROCESSED:
+
+# Folder to store QGIS project files supporting planning and data processing work.
+PROJECTS:
+  PLANNING:
+  EXTRACTION:
+
+# This folder stores the product resulting from HOT or local OSM group work in baseline data sets. 
+# Survey planning maps are equally stored there. 
+PRODUCTS:
+  SHAPEFILES:
+  TABLES:
+  KML:
+  MAPS:
+
+# This folder stores all documents supporting HOT work.
+SUPPORT_DOCS:
+  PRESENTATIONS:
+    HOT:
+    HAITI_WORK:
+    TRAINING_INTRODUCTION:
+  GUIDES:
+    SURVEY:
+    JOSM:
+    QGIS:
+  OSM_MAP_FEATURES:
+  HDM_SCHEMA:
+  HDM_FORMS:
+  HDM_PRESETS:
+  HDM_OSM2PGSQL_STYLES:
+  QGIS_IMAGES:
+  QGIS_ICONS:
+  SCRIPTS:
+  SOFTWARES:

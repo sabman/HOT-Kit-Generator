@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+# command line interface to the HOT kit generator
+
+$:.push File.expand_path("../../lib", __FILE__)
+
+begin
+  require 'hot_kit_generator'
+  require 'slop'
+rescue LoadError
+  require "rubygems"
+  require 'hot_kit_generator'
+  require 'slop'
+end
+
+# Currently there are no options. May change in the future
+opts = Slop.parse :help => true do
+  banner <<USAGE
+Usage: hot_kit_generator [options] root_dir dir_config_file
+
+    root_dir:         Root directory for a new HOT kit default: "#{HotKitGenerator::ROOT_DIR}"
+    dir_config_file:  HOT directory structure default: "#{HotKitGenerator::DIR_CONFIG_FILE}"
+USAGE
+end
+
+# build the new HOT Kit
+HotKitGenerator.build(ARGV[0], ARGV[1])
