@@ -9,10 +9,21 @@ If the directory structure is not given it will use the default one
 
 ## Installation:
 
+### Using RVM
     git clone git://github.com/sabman/HOT-Kit-Generator.git
     cd HOT-Kit-Generator
     bundle install
     rake install
+
+### Using System Ruby
+
+    sudo bundle install
+    sudo rake install
+
+Make sure bundler is installed. If not you will need to run the following before running the above (Thanks Dane Springmeyer):
+
+    sudo gem update --system # because bundle would not gem install do to old rubygems
+    sudo gem install bundler
 
 ## Usage:
 
