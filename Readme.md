@@ -22,7 +22,7 @@ If the directory structure is not given it will use the default one
 
 Make sure bundler is installed. If not you will need to run the following before running the above (Thanks Dane Springmeyer):
 
-    sudo gem update --system # because bundle would not gem install do to old rubygems
+    sudo gem update --system
     sudo gem install bundler
 
 ## Usage:
